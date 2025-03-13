@@ -1,1 +1,13 @@
-local.settings.json
+docker/
+Dockerfile
+.dockerignore
+.git
+.gitignore
+.gitattributes
+.idea
+.vs
+.vscode
+**/obj
+**/bin
+**/*.*proj.user
+**/.env

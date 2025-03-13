@@ -2,19 +2,16 @@ using Functions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
-using Microsoft.Extensions.Logging;
 using FromBodyAttribute = Microsoft.Azure.Functions.Worker.Http.FromBodyAttribute;
 
-namespace first_function.SensorData
+namespace GmkrFunctions.SensorData
 {
     public class HandleRequest
     {
-        private readonly ILogger<HandleRequest> _logger;
         private readonly ISensorDataRepository _repository;
 
-        public HandleRequest(ILogger<HandleRequest> logger, ISensorDataRepository repository)
+        public HandleRequest(ISensorDataRepository repository)
         {
-            _logger = logger;
             _repository = repository;
         }
 

@@ -1,4 +1,4 @@
-﻿namespace first_function;
+﻿namespace GmkrFunctions;
 
 public static class Constants
 {

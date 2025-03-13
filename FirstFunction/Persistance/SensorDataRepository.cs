@@ -1,5 +1,5 @@
 ﻿using Azure.Data.Tables;
-using first_function;
+using GmkrFunctions;
 using Microsoft.Extensions.Logging;
 using Polly;
 using Polly.Retry;
