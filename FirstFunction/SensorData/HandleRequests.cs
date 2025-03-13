@@ -37,16 +37,5 @@ namespace GmkrFunctions.SensorData
             var result = await _repository.GetSensorDataAsync(id);
             return new ObjectResult(result);
         }
-        
-        [Function("GetSensorData2")]
-        public async Task<IActionResult> GetSensorData2(
-            [HttpTrigger(AuthorizationLevel.Function, "get")] HttpRequest req)
-        {
-            req.Query.TryGetValue("sensorId", out var sensorId);
-            if (!int.TryParse(sensorId, out var id))
-                return new BadRequestResult();
-            var result = await _repository.GetSensorDataAsync(id);
-            return new ObjectResult(result);
-        }
     }
 }
