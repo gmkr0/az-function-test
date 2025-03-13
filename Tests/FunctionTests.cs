@@ -22,6 +22,5 @@ public class FunctionTests
         var result = await _function
             .PostSensorData(Mock.Of<HttpRequest>(), new SensorData());
         result.Should().BeOfType<BadRequestResult>();
-        true.Should().BeTrue();
     }
 }
